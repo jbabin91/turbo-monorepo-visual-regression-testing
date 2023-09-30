@@ -55,7 +55,7 @@ jobs:
           CI: true
 
       - name: ${{ matrix.config.name }}
-        uses: lost-pixel/lost-pixel@v3.7.1
+        uses: lost-pixel/lost-pixel@v3.3.0
         env:
           LOST_PIXEL_API_KEY: ${{ secrets.LOST_PIXEL_API_KEY }}
           LOST_PIXEL_CONFIG_DIR: ${{ matrix.config.package }}
@@ -68,8 +68,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Lost Pixel finalize
-        uses: lost-pixel/lost-pixel@v3.7.1
+      - name: Lost Pixel Finalize
+        uses: lost-pixel/lost-pixel@v3.3.0
         env:
           LOST_PIXEL_API_KEY: ${{ secrets.LOST_PIXEL_API_KEY }}
           LOST_PIXEL_CONFIG_DIR: apps/web
