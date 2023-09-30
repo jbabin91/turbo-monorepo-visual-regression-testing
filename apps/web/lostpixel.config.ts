@@ -5,11 +5,7 @@ export const config = {
     pages: [{ path: '/', name: 'landing' }],
     baseUrl: 'http://172.17.0.1:3000',
   },
-  lostPixelProjectId: 'cln5eqqpqf5supp0e9g9g8q06',
+  lostPixelProjectId: 'cln5esnoqf5swpp0ea8ipn6qh',
   apiKey: process.env.LOST_PIXEL_API_KEY,
-  ciBuildId: '',
-  ciBuildNumber: '',
-  repository: '',
-  commitRefName: '',
-  commitHash: '',
+  // @ts-expect-error - docs only uses this configs
 } satisfies CustomProjectConfig;
