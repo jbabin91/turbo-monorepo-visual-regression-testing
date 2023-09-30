@@ -1,17 +1,19 @@
 {
+  "name": "turbo-monorepo-visual-regression-testing",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier -uw --cache .",
+    "format:check": "prettier -uc --cache .",
+    "lint": "turbo run lint"
   },
   "devDependencies": {
     "eslint": "^8.50.0",
     "prettier": "^3.0.3",
+    "prettier-plugin-packagejson": "^2.4.6",
     "tsconfig": "workspace:*",
     "turbo": "^1.10.14"
   },
-  "packageManager": "pnpm@8.6.10",
-  "name": "turbo-monorepo-visual-regression-testing"
+  "packageManager": "pnpm@8.6.10"
 }
